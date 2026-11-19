@@ -1,0 +1,38 @@
+CATEGORY|Accessories	Revenue: 8863900.00	Quantity: 7309	Records: 2456
+CATEGORY|Electronics	Revenue: 252078000.00	Quantity: 9933	Records: 3331
+CATEGORY|Fashion	Revenue: 24929800.00	Quantity: 7661	Records: 2527
+CATEGORY|Furniture	Revenue: 45366000.00	Quantity: 5048	Records: 1686
+MONTH|2025-01	Revenue: 27945200.00	Quantity: 2469	Records: 830
+MONTH|2025-02	Revenue: 25508200.00	Quantity: 2406	Records: 803
+MONTH|2025-03	Revenue: 29943200.00	Quantity: 2464	Records: 831
+MONTH|2025-04	Revenue: 28695800.00	Quantity: 2578	Records: 849
+MONTH|2025-05	Revenue: 30972300.00	Quantity: 2500	Records: 846
+MONTH|2025-06	Revenue: 25284100.00	Quantity: 2343	Records: 799
+MONTH|2025-07	Revenue: 27447700.00	Quantity: 2554	Records: 836
+MONTH|2025-08	Revenue: 29694300.00	Quantity: 2725	Records: 898
+MONTH|2025-09	Revenue: 22185900.00	Quantity: 2302	Records: 782
+MONTH|2025-10	Revenue: 28343000.00	Quantity: 2629	Records: 872
+MONTH|2025-11	Revenue: 27067100.00	Quantity: 2377	Records: 795
+MONTH|2025-12	Revenue: 28150900.00	Quantity: 2604	Records: 859
+PAYMENT|Cash	Revenue: 62954100.00	Quantity: 5983	Records: 2025
+PAYMENT|Credit Card	Revenue: 65233400.00	Quantity: 6067	Records: 2004
+PAYMENT|Debit Card	Revenue: 67263700.00	Quantity: 5939	Records: 1995
+PAYMENT|Net Banking	Revenue: 67556200.00	Quantity: 5831	Records: 1957
+PAYMENT|UPI	Revenue: 68230300.00	Quantity: 6131	Records: 2019
+PRODUCT|Backpack	Revenue: 4546800.00	Quantity: 2526	Records: 839
+PRODUCT|Chair	Revenue: 20456000.00	Quantity: 2557	Records: 857
+PRODUCT|Desk	Revenue: 24910000.00	Quantity: 2491	Records: 829
+PRODUCT|Headphones	Revenue: 4662000.00	Quantity: 2331	Records: 803
+PRODUCT|Keyboard	Revenue: 2936400.00	Quantity: 2447	Records: 821
+PRODUCT|Laptop	Revenue: 121750000.00	Quantity: 2435	Records: 814
+PRODUCT|Mobile	Revenue: 34905000.00	Quantity: 2327	Records: 772
+PRODUCT|Monitor	Revenue: 31248000.00	Quantity: 2604	Records: 891
+PRODUCT|Mouse	Revenue: 1265500.00	Quantity: 2531	Records: 832
+PRODUCT|Shoes	Revenue: 7938000.00	Quantity: 2646	Records: 873
+PRODUCT|Tablet	Revenue: 64175000.00	Quantity: 2567	Records: 854
+PRODUCT|Watch	Revenue: 12445000.00	Quantity: 2489	Records: 815
+REGION|Central	Revenue: 64266800.00	Quantity: 5965	Records: 1980
+REGION|East	Revenue: 63993300.00	Quantity: 5861	Records: 1999
+REGION|North	Revenue: 66951500.00	Quantity: 5867	Records: 1957
+REGION|South	Revenue: 70159000.00	Quantity: 6045	Records: 2003
+REGION|West	Revenue: 65867100.00	Quantity: 6213	Records: 2061

@@ -1,0 +1,83 @@
+﻿services:
+  namenode:
+    image: ghcr.io/apache/hadoop:3.5.0
+    container_name: namenode
+    hostname: namenode
+    user: root
+    command: ["hdfs", "namenode"]
+    ports:
+      - "9870:9870"
+      - "8020:8020"
+    volumes:
+      - ./config:/opt/hadoop/etc/hadoop:ro
+      - namenode_data:/tmp/hadoop-root/dfs/name
+    environment:
+      HADOOP_HOME: /opt/hadoop
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
+    networks:
+      - hadoop-net
+    restart: unless-stopped
+
+  datanode:
+    image: ghcr.io/apache/hadoop:3.5.0
+    container_name: datanode
+    hostname: datanode
+    user: root
+    command: ["hdfs", "datanode"]
+    ports:
+      - "9864:9864"
+    volumes:
+      - ./config:/opt/hadoop/etc/hadoop:ro
+      - datanode_data:/tmp/hadoop-root/dfs/data
+    environment:
+      HADOOP_HOME: /opt/hadoop
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
+    depends_on:
+      - namenode
+    networks:
+      - hadoop-net
+    restart: unless-stopped
+
+  resourcemanager:
+    image: ghcr.io/apache/hadoop:3.5.0
+    container_name: resourcemanager
+    hostname: resourcemanager
+    user: root
+    command: ["yarn", "resourcemanager"]
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./config:/opt/hadoop/etc/hadoop:ro
+    environment:
+      HADOOP_HOME: /opt/hadoop
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
+    networks:
+      - hadoop-net
+    restart: unless-stopped
+
+  nodemanager:
+    image: ghcr.io/apache/hadoop:3.5.0
+    container_name: nodemanager
+    hostname: nodemanager
+    user: root
+    command: ["yarn", "nodemanager"]
+    ports:
+      - "8042:8042"
+    volumes:
+      - ./config:/opt/hadoop/etc/hadoop:ro
+    environment:
+      HADOOP_HOME: /opt/hadoop
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
+    depends_on:
+      - resourcemanager
+    networks:
+      - hadoop-net
+    restart: unless-stopped
+
+networks:
+  hadoop-net:
+    driver: bridge
+
+volumes:
+  namenode_data:
+  datanode_data:
